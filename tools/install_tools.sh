@@ -40,42 +40,42 @@ if [ "$arch" == "x86_64" ]; then
 
     echo "Installing httpx..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/httpx/releases/download/v1.6.5/httpx_1.6.5_linux_amd64.zip -O $tmpdir/httpx.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/httpx/releases/download/v1.6.10/httpx_1.6.10_linux_amd64.zip -O $tmpdir/httpx.zip > /dev/null 2>&1
     unzip $tmpdir/httpx.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/httpx ./app/tools
     rm -rf $tmpdir
 
     echo "Installing gau..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/lc/gau/releases/download/v2.2.3/gau_2.2.3_linux_amd64.tar.gz -O $tmpdir/gau.tar.gz > /dev/null 2>&1
+    wget https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_linux_amd64.tar.gz -O $tmpdir/gau.tar.gz > /dev/null 2>&1
     tar -xvf $tmpdir/gau.tar.gz -C $tmpdir > /dev/null 2>&1
     mv $tmpdir/gau ./app/tools/bin/
     rm -rf $tmpdir
 
     echo "Installing subfinder..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_amd64.zip -O $tmpdir/subfinder.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/subfinder/releases/download/v2.6.8/subfinder_2.6.8_linux_amd64.zip -O $tmpdir/subfinder.zip > /dev/null 2>&1
     unzip $tmpdir/subfinder.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/subfinder ./app/tools
     rm -rf $tmpdir
 
     echo "Installing dnsx..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/dnsx/releases/download/v1.2.1/dnsx_1.2.1_linux_amd64.zip -O $tmpdir/dnsx.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/dnsx/releases/download/v1.2.2/dnsx_1.2.2_linux_amd64.zip -O $tmpdir/dnsx.zip > /dev/null 2>&1
     unzip $tmpdir/dnsx.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/dnsx ./app/tools
     rm -rf $tmpdir
 
     echo "Installing nuclei..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/nuclei/releases/download/v3.2.9/nuclei_3.2.9_linux_amd64.zip -O $tmpdir/nuclei.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/nuclei/releases/download/v3.3.9/nuclei_3.3.9_linux_amd64.zip -O $tmpdir/nuclei.zip > /dev/null 2>&1
     unzip $tmpdir/nuclei.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/nuclei ./app/tools/bin
     rm -rf $tmpdir
 
     echo "Installing katana..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/katana/releases/download/v1.1.0/katana_1.1.0_linux_amd64.zip -O $tmpdir/katana.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/katana/releases/download/v1.1.2/katana_1.1.2_linux_amd64.zip -O $tmpdir/katana.zip > /dev/null 2>&1
     unzip $tmpdir/katana.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/katana ./app/tools
     rm -rf $tmpdir
@@ -105,42 +105,42 @@ elif [ "$arch" == "arm64" ]; then
 
     echo "Installing httpx..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/httpx/releases/download/v1.6.5/httpx_1.6.5_linux_arm64.zip -O $tmpdir/httpx.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/httpx/releases/download/v1.6.10/httpx_1.6.10_linux_arm64.zip -O $tmpdir/httpx.zip > /dev/null 2>&1
     unzip $tmpdir/httpx.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/httpx ./app/tools
     rm -rf $tmpdir
 
     echo "Installing gau..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/lc/gau/releases/download/v2.2.3/gau_2.2.3_linux_arm64.tar.gz -O $tmpdir/gau.tar.gz > /dev/null 2>&1
+    wget https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_linux_arm64.tar.gz -O $tmpdir/gau.tar.gz > /dev/null 2>&1
     tar -xvf $tmpdir/gau.tar.gz -C $tmpdir > /dev/null 2>&1
     mv $tmpdir/gau ./app/tools/bin/
     rm -rf $tmpdir
 
     echo "Installing subfinder..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_arm64.zip -O $tmpdir/subfinder.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/subfinder/releases/download/v2.6.8/subfinder_2.6.8_linux_arm64.zip -O $tmpdir/subfinder.zip > /dev/null 2>&1
     unzip $tmpdir/subfinder.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/subfinder ./app/tools
     rm -rf $tmpdir
 
     echo "Installing dnsx..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/dnsx/releases/download/v1.2.1/dnsx_1.2.1_linux_arm64.zip -O $tmpdir/dnsx.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/dnsx/releases/download/v1.2.2/dnsx_1.2.2_linux_arm64.zip -O $tmpdir/dnsx.zip > /dev/null 2>&1
     unzip $tmpdir/dnsx.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/dnsx ./app/tools
     rm -rf $tmpdir
 
     echo "Installing nuclei..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/nuclei/releases/download/v3.2.9/nuclei_3.2.9_linux_arm64.zip -O $tmpdir/nuclei.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/nuclei/releases/download/v3.3.9/nuclei_3.3.9_linux_arm64.zip -O $tmpdir/nuclei.zip > /dev/null 2>&1
     unzip $tmpdir/nuclei.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/nuclei ./app/tools/bin
     rm -rf $tmpdir
 
     echo "Installing katana..."
     tmpdir=$(mktemp -d)
-    wget https://github.com/projectdiscovery/katana/releases/download/v1.1.0/katana_1.1.0_linux_arm64.zip -O $tmpdir/katana.zip > /dev/null 2>&1
+    wget https://github.com/projectdiscovery/katana/releases/download/v1.1.2/katana_1.1.2_linux_arm64.zip -O $tmpdir/katana.zip > /dev/null 2>&1
     unzip $tmpdir/katana.zip -d $tmpdir > /dev/null 2>&1
     mv $tmpdir/katana ./app/tools
     rm -rf $tmpdir
