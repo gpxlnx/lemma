@@ -1,0 +1,22 @@
+id: exposed-login-form
+
+info:
+  name: Exposed Login Form
+  author: otterly
+  severity: info
+  metadata:
+    verified: true
+    max-request: 1
+  tags: exposure,login,form,misc,generic
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers:
+      - type: regex
+        regex:
+          - "type=[\"'](password)[\"']"
+          - 'id="password"'
+        condition: or
